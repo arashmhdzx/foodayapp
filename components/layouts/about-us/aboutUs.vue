@@ -37,14 +37,14 @@ export default defineComponent({
 
 <template>
     <div class="section-container wsm:flex-col gap-x-10 relative items-center">
-        <div class="flex w-full">
+        <div class="flex w-full wsm:justify-center">
             <img src="/public/assets/images/about-us.png" class="w-[80%]" alt="">
         </div>
         <div class="flex flex-col w-full">
 
             <SectionIntro title="درباره ما" />
 
-            <h2 class="text-[#031837] wsm:text-4xl font-bold text-[55px]  py-8 leading-[65px]">
+            <h2 class="aboutus-title">
                 بهترین پیشنهاد غذا <br>
                 مناسب برای سلامتی شما
             </h2>

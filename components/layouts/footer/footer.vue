@@ -29,7 +29,7 @@ export default defineComponent({
             <div>
                 LOGO
             </div>
-            <div class="flex wsm:flex-col w-3/4 items-center justify-between">
+            <div class="flex wsm:flex-col wsl:w-3/4 items-center justify-between">
                 <h4 class="text-lg font-medium wsm:my-4 text-white">جدیدترین اخبار ما را از دست ندهید</h4>
                 <form class="flex bg-[#414449] p-1 rounded-full w-1/3 text-lg wsm:w-full">
                     <input type="email" placeholder="ایمیل شما"
