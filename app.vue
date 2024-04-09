@@ -8,7 +8,7 @@ import Footer from './components/layouts/footer/footer.vue'
 
 
 
-useHead({
+useHead({   
     title: 'فودی | اپلیکیشن سفارش غذا'
 });
 </script>
