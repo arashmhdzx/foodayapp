@@ -6,10 +6,17 @@
     </div>
 </template>
 
-<script setup>
-const { review, name, imagePath } = defineProps({
+<script setup lang="ts">
+
+interface UserReviewCardProps {
+    review: string;
+    name: string;
+    imagePath: string;
+}
+
+const { review, name, imagePath }: UserReviewCardProps = defineProps({
     review: { type: String, required: true },
     name: { type: String, required: true },
     imagePath: { type: String, required: true },
-})
+});
 </script>

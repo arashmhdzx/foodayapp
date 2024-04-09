@@ -3,6 +3,12 @@
 import SectionIntro from '../../text/sectionIntro.vue';
 import AboutUsCard from '../../card/aboutUsCard.vue';
 
+interface CardData {
+    imagePath: string;
+    title: string;
+    category: string;
+}
+
 export default defineComponent({
     name: "AboutUs",
     components: {
@@ -11,23 +17,23 @@ export default defineComponent({
     },
     data() {
         return {
-            cardData :[
+            cardData: [
                 {
-                    imagePath:'/assets/images/card/breakfast.jpg',
-                    title:'پنکیک',
-                    category:'صبحانه'
+                    imagePath: '/assets/images/card/breakfast.jpg',
+                    title: 'پنکیک',
+                    category: 'صبحانه'
                 },
                 {
-                    imagePath:'/assets/images/card/dessert.jpg',
-                    title:'سالمون',
-                    category:'شام'
+                    imagePath: '/assets/images/card/dessert.jpg',
+                    title: 'سالمون',
+                    category: 'شام'
                 },
                 {
-                    imagePath:'/assets/images/card/salad.jpg',
-                    title:'سالاد',
-                    category:'پیش غذا'
+                    imagePath: '/assets/images/card/salad.jpg',
+                    title: 'سالاد',
+                    category: 'پیش غذا'
                 },
-            ]
+            ] as CardData[]
         }
     }
 });

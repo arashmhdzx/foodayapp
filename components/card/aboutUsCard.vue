@@ -6,10 +6,16 @@
     </div>
 </template>
 
-<script setup>
-    const { title ,category ,imagePath} = defineProps({
+<script setup lang="ts">
+interface AboutUsCardProps {
+    title: string;
+    category: string;
+    imagePath: string;
+}
+
+const { title, category, imagePath }: AboutUsCardProps = defineProps({
     title: { type: String, required: true },
     category: { type: String, required: true },
     imagePath: { type: String, required: true },
-})
+});
 </script>

@@ -5,8 +5,11 @@
     </div>
 </template>
 
-<script setup>
-const { title } = defineProps({
+<script setup lang="ts">
+interface Props {
+    title: string;
+}
+const { title }:Props = defineProps({
     title: { type: String, required: true },
 })
 </script>
