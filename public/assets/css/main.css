@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    * {
+        @apply font-ravi;
+    }
+    .section-container{
+        @apply flex  px-[160px]  w-full h-full;
+    }
+    .text{
+        @apply text-lg text-[#9FACA3] ;
+    }
+    .navbar{
+        @apply sticky top-0 flex justify-between items-center px-[160px] py-8 z-50 transition-all delay-75 ease-linear;
+    }
+    .active-navbar{
+        @apply bg-[#00000084]  backdrop-blur-sm shadow-lg;
+    }
+    .navlink{
+        @apply text-[#8E9493] hover:text-white transition-all delay-75 ease-linear px-8 ;
+    }
+    .register-button{
+        @apply bg-[#021739] text-white shadow-xl px-12 py-3 rounded-full ;
+    }
+    .register-text-button{
+        @apply transition-all delay-75 ease-linear   ;
+    }
+    .hero{
+        @apply   flex pt-[250px] px-[160px];
+    }
+    .hero-bg{
+        @apply absolute inset-0 top-[-112px]  bg-[url('/public/assets/images/hero.png')] bg-cover -scale-x-100 bg-no-repeat; /* Cover the entire area */
+    }
+    .download-section{
+        @apply bg-[url('/public/assets/images/download.png')] w-full bg-cover bg-no-repeat p-[auto];
+    }
+    /* #FF9123 */
+    /* #9FACA3 */
+}

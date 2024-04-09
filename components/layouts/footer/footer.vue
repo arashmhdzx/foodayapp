@@ -1,0 +1,69 @@
+<script lang="ts">
+
+import SectionIntro from '../../text/sectionIntro.vue';
+import UserReviewCard from '../../card/userReviewCard.vue';
+
+export default defineComponent({
+    name: "Comments",
+    components: {
+        SectionIntro,
+        UserReviewCard
+    },
+    data() {
+        return {
+            review: "همیشه وقتی وسایل تو یخچالم داره خراب میشه به این فکر میکنم که کاش میتونستم یه چیزی با همین وسایل درست کنم که هم مواد غذایی خراب نشه و هم غذای خونگی بخورم. ولی پیدا کردن ایده همیشه کار سختی بود. برای همین فودی رو درست کردم تا نه تنها مشکل خودمو حل کنم، بلکه به بقیه آدمایی که هر روز سوال چی بپزم رو از خودشون یا اطرافیانشون می‌پرسن هم کمک کنم ❤️",
+            name: 'فاطمه',
+            imagePath: '/assets/images/user.jpg'
+            // 
+        }
+    }
+
+});
+</script>
+
+
+
+<template>
+    <div class="section-container flex-col bg-[#1D2026]  mt-24 text-[#8E9493] pt-14 pb-6">
+        <div class="flex items-center justify-between py-10">
+            <div>
+                LOGO
+            </div>
+            <h4 class="text-lg font-medium text-white" >جدیدترین اخبار ما را از دست ندهید</h4>
+            <form class="flex bg-[#414449] p-1 rounded-full w-1/3 text-lg">
+                <input type="email" placeholder="ایمیل شما" class="p-2 bg-transparent w-full outline-none focus:ltr ">
+                <button type="submit" class="bg-[#6DCD7F] px-5 py-3 text-white font-medium rounded-full">عضویت</button>
+            </form>
+        </div>
+        <div class="flex justify-between w-full">
+            <div class="flex flex-col">
+                <p>
+                    به اپلیکیشن فودی بپیوندید <br>
+                    فردا برای ناهار چه غذایی دوست دارید بپزید؟ <br>
+                    اگر پاسخ به این سوال برای شما گاهی دشوار می‌شود،<br> حتماً اپلیکیشن فودی را دانلود کنید.
+                </p>
+            </div>
+            <div class="flex justify-between w-1/3">
+                <ul class="flex flex-col text-white font-medium gap-y-4 ">
+                    <li>درباره ما</li>
+                    <li>ارتباط با ما</li>
+                    <li> سیاست های حریم خصوصی</li>
+                    <li>سوالات متداول</li>
+                    <li>دانلود</li>
+                </ul>
+                <ul class="flex flex-col text-white font-medium gap-y-4 ">
+                    <li>توئیتر</li>
+                    <li>اینستاگرام</li>
+                    <li>تلگرام</li>
+                </ul>
+            </div>
+            <div class="flex flex-col">
+                <p class="text-lg font-medium text-white">دفتر ما</p>
+                <p>لاهیجان | ایران</p>
+            </div>
+        </div>
+        <div class="flex justify-center mt-10">
+            <p>All Rights Reserved 2021 - FoodayApp</p>
+        </div>
+    </div>
+</template>
