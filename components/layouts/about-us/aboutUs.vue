@@ -36,7 +36,7 @@ export default defineComponent({
 
 
 <template>
-    <div class="section-container gap-x-10 relative items-center">
+    <div class="section-container wsm:flex-col gap-x-10 relative items-center">
         <div class="flex w-full">
             <img src="/public/assets/images/about-us.png" class="w-[80%]" alt="">
         </div>
@@ -44,7 +44,7 @@ export default defineComponent({
 
             <SectionIntro title="درباره ما" />
 
-            <h2 class="text-[#031837] font-bold text-[55px]  py-8 leading-[65px]">
+            <h2 class="text-[#031837] wsm:text-4xl font-bold text-[55px]  py-8 leading-[65px]">
                 بهترین پیشنهاد غذا <br>
                 مناسب برای سلامتی شما
             </h2>

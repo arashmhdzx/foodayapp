@@ -25,17 +25,22 @@ export default defineComponent({
 
 <template>
     <div class="section-container flex-col bg-[#1D2026]  mt-24 text-[#8E9493] pt-14 pb-6">
-        <div class="flex items-center justify-between py-10">
+        <div class="flex wsm:flex-col items-center justify-between py-10">
             <div>
                 LOGO
             </div>
-            <h4 class="text-lg font-medium text-white" >جدیدترین اخبار ما را از دست ندهید</h4>
-            <form class="flex bg-[#414449] p-1 rounded-full w-1/3 text-lg">
-                <input type="email" placeholder="ایمیل شما" class="p-2 bg-transparent w-full outline-none focus:ltr ">
-                <button type="submit" class="bg-[#6DCD7F] px-5 py-3 text-white font-medium rounded-full">عضویت</button>
-            </form>
+            <div class="flex wsm:flex-col w-3/4 items-center justify-between">
+                <h4 class="text-lg font-medium wsm:my-4 text-white">جدیدترین اخبار ما را از دست ندهید</h4>
+                <form class="flex bg-[#414449] p-1 rounded-full w-1/3 text-lg wsm:w-full">
+                    <input type="email" placeholder="ایمیل شما"
+                        class="p-2 bg-transparent w-full outline-none focus:ltr ">
+                    <button type="submit"
+                        class="bg-[#6DCD7F] px-5 py-3 text-white font-medium rounded-full">عضویت</button>
+                </form>
+            </div>
         </div>
-        <div class="flex justify-between w-full">
+        <div class="flex wsm:flex-wrap wsm:gap-3 justify-between w-full">
+
             <div class="flex flex-col">
                 <p>
                     به اپلیکیشن فودی بپیوندید <br>
@@ -43,7 +48,7 @@ export default defineComponent({
                     اگر پاسخ به این سوال برای شما گاهی دشوار می‌شود،<br> حتماً اپلیکیشن فودی را دانلود کنید.
                 </p>
             </div>
-            <div class="flex justify-between w-1/3">
+            <div class="flex wsm:gap-x-5 justify-between w-1/3 wsm:w-3/4">
                 <ul class="flex flex-col text-white font-medium gap-y-4 ">
                     <li>درباره ما</li>
                     <li>ارتباط با ما</li>
@@ -57,7 +62,7 @@ export default defineComponent({
                     <li>تلگرام</li>
                 </ul>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col wsm:justify-center wsm:items-center wsm:w-full">
                 <p class="text-lg font-medium text-white">دفتر ما</p>
                 <p>لاهیجان | ایران</p>
             </div>

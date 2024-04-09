@@ -24,13 +24,13 @@ export default defineComponent({
 
 
 <template>
-    <div class="section-container gap-x-10 relative items-center">
+    <div class="section-container wsm:flex-col gap-x-10 relative items-center">
 
         <div class="flex flex-col w-full">
 
             <SectionIntro title="بقیه چی میگن؟" />
 
-            <h2 class="text-[#031837] font-bold text-[55px]  py-8 leading-[65px]">
+            <h2 class="text-[#031837] font-bold wsm:text-3xl text-[55px]  py-8 leading-[65px]">
                 ببینیم بقیه نظرشون <br>
                 درباره اپ چـیـــــــــه ؟
             </h2>
@@ -38,7 +38,7 @@ export default defineComponent({
                 :review="review"
                 :name="name" :imagePath="imagePath" />
         </div>
-        <div class="flex w-full">
+        <div class="flex w-full wsm:hidden">
             <img src="/public/assets/images/cookingFood.jpg" class="w-[100%] rounded-3xl" alt="">
         </div>
     </div>
