@@ -44,5 +44,5 @@ jobs:
         server: 3117460654.cloudylink.com
         username: arashmz@foodayapp.freehost.io 
         password: tsvmbn1ynh
-        local-dir: ./dist 
+        local-dir: ./dist/
         remote-dir: /public_htm
