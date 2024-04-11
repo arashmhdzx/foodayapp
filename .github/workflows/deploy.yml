@@ -38,11 +38,11 @@ jobs:
     - name: Generate static files
       run: npm run generate
 
-    - name: Deploy to server
-      env:
-        HOST_USERNAME: ${{ secrets.HOST_USERNAME }}
-        HOST_PASSWORD: ${{ secrets.HOST_PASSWORD }}
-        HOST: ${{ secrets.HOST }}
-        PORT: ${{ secrets.PORT }}
-      run: |
-        scp -r .output/public ${{ secrets.HOST_USERNAME }}@${{ secrets.HOST }}:/home/fooday
+    - name: Deploy to FTP 
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3 
+      with: 
+        server: ftp.enterflash.com 
+        username: ${{ secrets.ftp_username }} 
+        password: ${{ secrets.ftp_password }} 
+        local-dir: ./dist 
+        remote-dir: /public_htm
