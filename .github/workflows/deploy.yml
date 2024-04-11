@@ -41,8 +41,8 @@ jobs:
     - name: Deploy to FTP 
       uses: SamKirkland/FTP-Deploy-Action@4.3.3 
       with: 
-        server: ftp.enterflash.com 
-        username: ${{ secrets.ftp_username }} 
-        password: ${{ secrets.ftp_password }} 
+        server: 3117460654.cloudylink.com
+        username: arashmz@foodayapp.freehost.io 
+        password: tsvmbn1ynh
         local-dir: ./dist 
         remote-dir: /public_htm
