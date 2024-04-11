@@ -36,7 +36,7 @@ jobs:
       run: npm run build
 
     - name: Generate static files
-      run: npm run generate
+      run: npx nuxi generate
 
     - name: Deploy to FTP 
       uses: SamKirkland/FTP-Deploy-Action@4.3.3 
@@ -45,4 +45,4 @@ jobs:
         username: arashmz@foodayapp.freehost.io 
         password: tsvmbn1ynh
         local-dir: ./dist/
-        remote-dir: /public_htm
+        remote-dir: /public_html
